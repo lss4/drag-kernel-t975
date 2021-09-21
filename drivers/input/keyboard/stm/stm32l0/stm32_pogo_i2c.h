@@ -34,6 +34,9 @@
 #include <linux/sec_class.h>
 #endif
 #include <linux/input/pogo_i2c_notifier.h>
+#ifndef CONFIG_SEC_DEBUG_TSP_LOG
+#include <linux/uaccess.h>
+#endif
 
 /* Utility MACROs */
 

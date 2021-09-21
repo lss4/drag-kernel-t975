@@ -1896,6 +1896,7 @@ static u8 fts_event_handler_type_b(struct fts_ts_info *info)
 						info->print_info_cnt_release = 0;
 					}
 
+#if 0
 #if !defined(CONFIG_SAMSUNG_PRODUCT_SHIP)
 					input_info(true, &info->client->dev,
 							"[R] tID:%d loc:%s dd:%d,%d mc:%d tc:%d lx:%d ly:%d p:%d nlvl:%d maxS:%d hid:%d\n",
@@ -1915,6 +1916,7 @@ static u8 fts_event_handler_type_b(struct fts_ts_info *info)
 							info->finger[TouchID].mcount, info->touch_count,
 							info->finger[TouchID].palm_count, info->finger[TouchID].noise_level,
 							info->finger[TouchID].max_strength, info->finger[TouchID].hover_id_num);
+#endif
 #endif
 
 					info->finger[TouchID].action = FTS_COORDINATE_ACTION_NONE;
@@ -1962,6 +1964,7 @@ static u8 fts_event_handler_type_b(struct fts_ts_info *info)
 						info->multi_count++;
 					}
 
+#if 0
 #if !defined(CONFIG_SAMSUNG_PRODUCT_SHIP)
 					input_info(true, &info->client->dev,
 							"[P] tID:%d.%d x:%d y:%d z:%d major:%d minor:%d loc:%s tc:%d type:%d p:%d nlvl:%d maxS:%d hid:%d\n",
@@ -1981,6 +1984,7 @@ static u8 fts_event_handler_type_b(struct fts_ts_info *info)
 							location, info->touch_count, info->finger[TouchID].ttype,
 							info->finger[TouchID].palm_count, info->finger[TouchID].noise_level,
 							info->finger[TouchID].max_strength, info->finger[TouchID].hover_id_num);
+#endif
 #endif
 				} else if (info->finger[TouchID].action == FTS_COORDINATE_ACTION_MOVE) {
 					if (info->touch_count == 0) {
