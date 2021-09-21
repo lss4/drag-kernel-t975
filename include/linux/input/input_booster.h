@@ -1,4 +1,4 @@
-#if !defined(CONFIG_INPUT_BOOSTER) // Input Booster +
+#ifdef CONFIG_SEC_INPUT_BOOSTER // Input Booster +
 #ifndef _INPUT_BOOSTER_H_
 #define _INPUT_BOOSTER_H_
 
