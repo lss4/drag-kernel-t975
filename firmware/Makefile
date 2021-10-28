@@ -27,7 +27,7 @@ fw-external-$(CONFIG_TOUCHSCREEN_SEC_TS_Y79A_C) += tsp_sec/y79a_c1_x1ub.bin tsp_
 fw-external-$(CONFIG_EPEN_WACOM_W9020) += epen/w9020_c1_x1ub.bin epen/w9020_c1_y79a.bin epen/w9020_c1.bin
 endif
 
-fw-external-$(CONFIG_TOUCHSCREEN_FTS1BA90A) += tsp_stm/fts1ba90a_gts5.bin tsp_stm/fts1ba90a_gts7xl.bin
+fw-external-$(CONFIG_TOUCHSCREEN_FTS1BA90A) += tsp_stm/fts1ba90a_gts7xl.bin
 fw-external-$(CONFIG_TOUCHSCREEN_NOVATEK_NT36523) += tsp_novatek/nt36523_gts7l.bin
 
 fw-external-$(CONFIG_TOUCHSCREEN_FTS9CU80F_B)	+= tsp_stm/fts9cu80f_bloom.fw tsp_stm/fts9cu80f_f2.fw
@@ -37,7 +37,7 @@ ifdef CONFIG_SEC_GTS7L_PROJECT
 fw-external-$(CONFIG_EPEN_WACOM_W9021) += epen/w9021_gts7l.bin epen/w9021_gts7l_pv1.bin epen/w9021_gts7l_pv2.bin
 endif
 ifdef CONFIG_SEC_GTS7XL_PROJECT
-fw-external-$(CONFIG_EPEN_WACOM_W9021) += epen/w9021_gts7_bringup.bin epen/w9021_gts7xl.bin
+fw-external-$(CONFIG_EPEN_WACOM_W9021) += epen/w9021_gts7xl.bin
 endif
 
 fw-external-$(CONFIG_TOUCHSCREEN_SEC_TS_Y771_SUB) += tsp_sec/y771_f2.bin
@@ -77,6 +77,7 @@ endif
 
 fw-external-$(CONFIG_TOUCHSCREEN_MELFAS_MSS100) += tsp_melfas/mss100_r8.bin
 fw-external-$(CONFIG_TOUCHSCREEN_ZINITIX_ZT7650) += tsp_zinitix/zt7650_r8.bin
+fw-external-$(CONFIG_TOUCHSCREEN_STM_FTS5CU56A) += tsp_stm/fts5cu56a_r8.bin
 
 ifdef CONFIG_SEC_C2Q_PROJECT
 fw-external-$(CONFIG_SENSORS_VL53L5) += range_sensor/vl53l5_c2.bin \
